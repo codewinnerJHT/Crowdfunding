@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="@color/Lightgreen">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/photo_1"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tv_username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="财富不止一点"
+        android:layout_marginLeft="25dp"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+    <TextView
+        android:id="@+id/login_acct1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/tv_username1"
+        android:text="ChiangHayTao@163.com"
+        android:textColor="#fff"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>

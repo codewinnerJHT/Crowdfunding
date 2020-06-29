@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <!--android:icon="@drawable/profile"-->
+        <item
+            android:id="@+id/update_pswd"
+            android:icon="@drawable/update"
+            android:title="修改密码"/>
+        <item
+            android:id="@+id/update_acct"
+            android:icon="@drawable/update_acct"
+            android:title="修改账户"/>
+        <item
+            android:id="@+id/login_out"
+            android:icon="@drawable/login_out"
+            android:title="注销登录"/>
+        <item
+            android:id="@+id/out"
+            android:icon="@drawable/out"
+            android:title="退出应用"/>
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/about_us"
+            android:title="关于我们"/>
+    </group>
+</menu>

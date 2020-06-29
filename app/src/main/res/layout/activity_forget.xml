@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/title_color" >
+
+        <ImageView
+            android:id="@+id/forget_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8.0dip"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/btn_title"
+            android:gravity="center"
+            android:src="@drawable/is_back"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="重置密码"
+            android:textColor="#ffffffff"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5.0dip"
+                    android:text="手  机  号"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+
+                    <EditText
+                        android:id="@+id/user_acct_foget"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/edittext_login_register"
+                        android:hint="请输入手机号"
+                        android:imeOptions="actionNext"
+                        android:maxLength="16"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:id="@+id/user_acct_clear"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/forget_user_acct_error"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="68.0dip"
+                android:text="请输入符合规定的手机号"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:text="验  证  码"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+
+                    <EditText
+                        android:id="@+id/user_code_foget"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/edittext_login_register"
+                        android:hint="请输入验证码"
+                        android:imeOptions="actionNext"
+                        android:maxLength="20"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+
+                    <Button
+                        android:id="@+id/get_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+           <TextView
+                android:id="@+id/foget_code_error"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="68.0dip"
+                android:text="验证码不正确,请重新获取验证"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5.0dip"
+                    android:text="密        码"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+
+                    <EditText
+                        android:id="@+id/foget_password_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/edittext_login_register"
+                        android:hint="请输入密码"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:id="@+id/forget_password_clear"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forget_password_error"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="68.0dip"
+                android:text="密码至少为6位数哦"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="65.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="5.0dip"
+                    android:text="确认密码"
+                    android:textColor="#ff404040"
+                    android:textSize="16.0dip" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip" >
+
+                    <EditText
+                        android:id="@+id/forget_confirm_password_edit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/edittext_login_register"
+                        android:hint="请确认密码"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:paddingLeft="10.0dip"
+                        android:singleLine="true"
+                        android:textSize="16.0dip" />
+
+                    <ImageView
+                        android:id="@+id/forget_confirm_password_clear"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:src="@drawable/close"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/forget_confirm_password_error"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="68.0dip"
+                android:text="请确保两次密码一致"
+                android:textColor="#ffff0000"
+                android:textSize="13.0dip"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="200.0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/btn_login"
+                android:text="立即重置"
+                android:textColor="#fafbfa"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

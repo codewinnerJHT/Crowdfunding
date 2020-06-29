@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/rbt_bottom"-->
+            <!--android:text="科技"/>-->
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/rbt_bottom"-->
+            <!--android:text="数码"/>-->
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--   <RadioGroup
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content">
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />店铺
+               <RadioButton
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />菜谱
+           </RadioGroup>-->
+        <LinearLayout
+            android:id="@+id/bottomList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#14ca17"
+            android:orientation="horizontal" >
+<!---->
+            <LinearLayout style="@style/linaer_bottom" >
+                <RadioButton
+                    android:id="@+id/ra_shop_bt"
+                    style="@style/rbt_bottom"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:text="科技" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/linaer_bottom" >
+
+                <RadioButton
+                    android:id="@+id/ra_food_bt"
+                    style="@style/rbt_bottom"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:background="@color/gray"
+                    android:text="数码" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/news_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:dividerHeight="3dp"
+       >
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#eeee" />-->
+
+    </ListView>
+
+</LinearLayout>

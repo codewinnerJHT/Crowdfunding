@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Crowdfunding</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_welcome">Welcome</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_news_details">NewsDetailsActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_forget">ForgetActivity</string>
+</resources>

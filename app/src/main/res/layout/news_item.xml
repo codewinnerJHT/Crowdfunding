@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_news_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/point_red"/>
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="120dp"
+    android:layout_marginLeft="30dp">
+    <TextView
+        android:id="@+id/tv_news_title"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="孙正义退出阿里巴巴董事会，马云同日卸任软银董事"/>
+    <TextView
+        android:id="@+id/tv_news_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI财经社"/>
+    <TextView
+        android:id="@+id/tv_news_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020-06-25 11:38:23"/>
+</LinearLayout>
+</LinearLayout>

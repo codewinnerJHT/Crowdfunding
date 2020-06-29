@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle" >
+            <stroke
+                android:width="2px"
+                android:color="#7f8888" />
+            <!-- 填充的颜色 -->
+            <solid android:color="#14ca17"></solid>
+            <!-- android:radius 弧形的半径 -->
+            <!-- padding：Button里面的文字与Button边界的间隔 -->
+            <padding android:bottom="2dp" android:left="2dp" android:right="2dp" android:top="2dp" />
+        </shape>
+
+    </item>
+
+</selector>
