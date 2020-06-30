@@ -193,7 +193,6 @@ public class CollectionFragment extends BaseFragment {
                     return true;
                 }
             });
-
         }else {
 
         }
