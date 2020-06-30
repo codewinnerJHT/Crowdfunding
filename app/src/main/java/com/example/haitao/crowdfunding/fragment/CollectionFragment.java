@@ -199,6 +199,7 @@ public class CollectionFragment extends BaseFragment {
         }
     }
 
+
     private  void startGoodsinfo(GoodsInfoBean goodInfoBean){
         Intent intent= new Intent(mContext, GoodsInfoActivity.class);
         intent.putExtra("GOODSBEAN",goodInfoBean);
